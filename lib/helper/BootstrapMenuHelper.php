@@ -32,6 +32,9 @@
  */
 function ncbt_menu($config = null, $options = array())
 {
+  use_stylesheet('/ncBootstrapMenuHelper/css/bootstrap.min.css');
+  use_javascript('/ncBootstrapMenuHelper/js/bootstrap-dropdown.css', 'last');
+
   if (null === $config)
   {
     $config = sfConfig::get('sf_config_dir') . '/menu.yml';
