@@ -4,7 +4,7 @@
 
 ## Usage
 
-Typical use will be including the `BootstrapMenu` calling the `bt_menu()` helper function with some optional arguments:
+Typical use will be including the `BootstrapMenu` calling the `ncbt_menu()` helper function with some optional arguments:
 
 ```php
 <?php use_helper('BootstrapMenu'); ?>
