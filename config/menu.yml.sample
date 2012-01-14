@@ -1,0 +1,51 @@
+menu:
+  dashboard:
+    target: @homepage
+
+  authorizations:
+    #condition: hasActiveAuthorizations
+    #condition_args: []
+    template: ~document/activeAuthorizations
+
+  administration:
+    credentials: [administrador]
+    children:
+      app_settings:
+        title: Application settings
+        target: @application_settings
+      divider_1:
+        type: divider
+      documents:
+        title: Documents
+        target: @document
+      subjects:
+        target: @subject
+      categories:
+        target: @category
+      groups:
+        target: @group
+      users:
+        target: @sf_guard_user
+      divider_2:
+        type: divider
+      access_requests:
+        title: Access requests
+        target: @access_request_admin
+      category_requests:
+        title: Category requests
+        target: @category_request_admin
+      divider_3:
+        type: divider
+      document_deletion_requests:
+        title: Document deletion requests
+        target: @document_deletion_request
+
+  audit:
+    credentials: [administrador]
+    children:
+      downloads:
+        title: Document downloads
+        target: @document_download
+      useractions:
+        title: User actions
+        target: @nc_tracker_entry
