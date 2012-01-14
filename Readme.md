@@ -12,6 +12,8 @@ Clone this plugin into your project's `plugins` directory:
 Enable the plugin in your `ProjectConfiguration` class:
 
 ```php
+<?php
+
 class ProjectConfiguration extends sfProjectConfiguration
 {
   public function setup()
